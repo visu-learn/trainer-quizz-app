@@ -15,7 +15,7 @@ export type QuestionData = {
 };
 
 export type QuizzData = {
-  id: string[];
+  id: string;
   subject: string;
   questions: QuestionData[];
 };

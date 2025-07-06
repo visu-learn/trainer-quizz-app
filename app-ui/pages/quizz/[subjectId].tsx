@@ -41,7 +41,7 @@ export default function QuizzPage() {
           <>
             {data ? (
               <>
-                <QuizzForm questions={data.questions} />
+                <QuizzForm quizzId={data.id} questions={data.questions} />
               </>
             ) : (
               <>No Data</>

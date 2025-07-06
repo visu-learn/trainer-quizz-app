@@ -2,12 +2,38 @@ import { Code } from "@heroui/code";
 import { QuestionData } from "../../types";
 import { Checkbox } from "@heroui/checkbox";
 import { Card, CardBody } from "@heroui/card";
+import { useCallback, useEffect } from "react";
 
 interface Props {
   data: QuestionData;
+  answers: { [id: string]: string[] };
+  onAnswer: (answerId: string) => void;
 }
-export const QuestionForm: React.FC<Props> = ({ data }) => {
+export const QuestionForm: React.FC<Props> = ({ data, answers, onAnswer }) => {
   const { id, description, possibilities, ...props } = data;
+
+  const isSelected = useCallback(
+    (possibilityId: string) => {
+      if (data.id in answers) {
+        return answers[data.id].includes(possibilityId);
+      }
+
+      return false;
+    },
+    [answers]
+  );
+
+  useEffect(() => {
+    console.log(answers);
+  }, [answers]);
+
+  const handleChooseAnswer = useCallback(
+    (id: string) => () => {
+      console.log(answers + "click " + id + " " + data.id);
+      onAnswer(id);
+    },
+    [answers]
+  );
 
   return (
     <>
@@ -26,7 +52,12 @@ export const QuestionForm: React.FC<Props> = ({ data }) => {
               <Card key={possibility.id} className="mb-2">
                 <CardBody>
                   <div className="flex flex-col gap-2">
-                    <Checkbox isSelected={false}>If title</Checkbox>
+                    <Checkbox
+                      isSelected={isSelected(possibility.id)}
+                      onChange={handleChooseAnswer(possibility.id)}
+                    >
+                      If title
+                    </Checkbox>
                     <p className="text-default-500">
                       {possibility.description}
                     </p>
