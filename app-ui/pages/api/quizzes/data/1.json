@@ -1,0 +1,170 @@
+{
+  "id": "quiz-0001",
+  "subject": "Programming",
+  "questions": [
+    {
+      "id": "5c09a6bc-1d95-4a4a-92b9-3d6fe7c1d79e",
+      "type": "single",
+      "category": "JavaScript",
+      "description": "What is the result of `typeof null` in JavaScript?",
+      "possibilities": [
+        { "id": "opt1", "description": "`undefined`", "isCorrect": false },
+        { "id": "opt2", "description": "`null`", "isCorrect": false },
+        { "id": "opt3", "description": "`object`", "isCorrect": true },
+        { "id": "opt4", "description": "`function`", "isCorrect": false }
+      ],
+      "answers": ["opt3"],
+      "explanation": "In JavaScript, `typeof null` returns 'object' due to a historical bug.",
+      "difficulty": "easy",
+      "tags": ["typeof", "JavaScript", "null"]
+    },
+    {
+      "id": "fa23a8fc-7a4d-4b10-bd31-24be9f33ffb7",
+      "type": "multiple",
+      "category": "Python",
+      "description": "Which of the following are mutable types in Python?",
+      "possibilities": [
+        { "id": "opt1", "description": "List", "isCorrect": true },
+        { "id": "opt2", "description": "Tuple", "isCorrect": false },
+        { "id": "opt3", "description": "Dictionary", "isCorrect": true },
+        { "id": "opt4", "description": "String", "isCorrect": false }
+      ],
+      "answers": ["opt1", "opt3"],
+      "explanation": "In Python, Lists and Dictionaries are mutable, while Tuples and Strings are immutable.",
+      "difficulty": "medium",
+      "tags": ["mutable", "python", "data types"]
+    },
+    {
+      "id": "0e83273d-b4a9-4640-b2b5-67c7b6ae9eb2",
+      "type": "single",
+      "category": "HTML",
+      "description": "Which tag is used to define an unordered list in HTML?",
+      "possibilities": [
+        { "id": "opt1", "description": "<ol>", "isCorrect": false },
+        { "id": "opt2", "description": "<ul>", "isCorrect": true },
+        { "id": "opt3", "description": "<li>", "isCorrect": false },
+        { "id": "opt4", "description": "<dl>", "isCorrect": false }
+      ],
+      "answers": ["opt2"],
+      "explanation": "<ul> is used for unordered lists, while <ol> is for ordered lists.",
+      "difficulty": "easy",
+      "tags": ["HTML", "tags", "lists"]
+    },
+    {
+      "id": "7f918312-8045-4114-b7f3-bf226e96b2a4",
+      "type": "single",
+      "category": "CSS",
+      "description": "Which CSS property is used to change the text color?",
+      "possibilities": [
+        { "id": "opt1", "description": "color", "isCorrect": true },
+        { "id": "opt2", "description": "font-size", "isCorrect": false },
+        { "id": "opt3", "description": "background-color", "isCorrect": false },
+        { "id": "opt4", "description": "text-align", "isCorrect": false }
+      ],
+      "answers": ["opt1"],
+      "explanation": "The `color` property is used to change the text color in CSS.",
+      "difficulty": "easy",
+      "tags": ["CSS", "text", "properties"]
+    },
+    {
+      "id": "0e6f14e3-1f6f-4d84-8000-7f6a983ed5d4",
+      "type": "multiple",
+      "category": "React",
+      "description": "Which of the following are hooks in React?",
+      "possibilities": [
+        { "id": "opt1", "description": "useState", "isCorrect": true },
+        { "id": "opt2", "description": "useEffect", "isCorrect": true },
+        {
+          "id": "opt3",
+          "description": "componentDidMount",
+          "isCorrect": false
+        },
+        { "id": "opt4", "description": "useForm", "isCorrect": false }
+      ],
+      "answers": ["opt1", "opt2"],
+      "explanation": "useState and useEffect are React hooks used for managing state and side-effects.",
+      "difficulty": "medium",
+      "tags": ["React", "hooks", "state"]
+    },
+    {
+      "id": "da04ebc1-2d8f-4ff5-b6b5-d032d6709c76",
+      "type": "single",
+      "category": "JavaScript",
+      "description": "What is the output of `console.log(2 + '2')` in JavaScript?",
+      "possibilities": [
+        { "id": "opt1", "description": "22", "isCorrect": true },
+        { "id": "opt2", "description": "4", "isCorrect": false },
+        { "id": "opt3", "description": "NaN", "isCorrect": false },
+        { "id": "opt4", "description": "undefined", "isCorrect": false }
+      ],
+      "answers": ["opt1"],
+      "explanation": "'2' is a string, so JavaScript performs string concatenation, not addition.",
+      "difficulty": "easy",
+      "tags": ["JavaScript", "operators", "type coercion"]
+    },
+    {
+      "id": "4f1ec8e7-22e5-43cf-86b3-f43e60499dbd",
+      "type": "multiple",
+      "category": "CSS",
+      "description": "Which of the following are valid CSS positioning types?",
+      "possibilities": [
+        { "id": "opt1", "description": "relative", "isCorrect": true },
+        { "id": "opt2", "description": "absolute", "isCorrect": true },
+        { "id": "opt3", "description": "dynamic", "isCorrect": false },
+        { "id": "opt4", "description": "fixed", "isCorrect": true }
+      ],
+      "answers": ["opt1", "opt2", "opt4"],
+      "explanation": "CSS supports `relative`, `absolute`, and `fixed` positioning types.",
+      "difficulty": "medium",
+      "tags": ["CSS", "positioning", "layout"]
+    },
+    {
+      "id": "ac3d3701-dbe2-46a4-8467-89cb4532182e",
+      "type": "single",
+      "category": "Python",
+      "description": "What does the `len()` function do in Python?",
+      "possibilities": [
+        {
+          "id": "opt1",
+          "description": "Returns the length of an object",
+          "isCorrect": true
+        },
+        {
+          "id": "opt2",
+          "description": "Returns the first element of an object",
+          "isCorrect": false
+        },
+        {
+          "id": "opt3",
+          "description": "Returns the last element of an object",
+          "isCorrect": false
+        },
+        {
+          "id": "opt4",
+          "description": "Checks if an object is empty",
+          "isCorrect": false
+        }
+      ],
+      "answers": ["opt1"],
+      "explanation": "`len()` returns the number of items in an object (e.g., list, tuple, string).",
+      "difficulty": "easy",
+      "tags": ["Python", "functions", "data types"]
+    },
+    {
+      "id": "ab88b010-d5d5-4b0b-9c2a-1c04522f5768",
+      "type": "multiple",
+      "category": "HTML",
+      "description": "Which tags are used to define a form in HTML?",
+      "possibilities": [
+        { "id": "opt1", "description": "<form>", "isCorrect": true },
+        { "id": "opt2", "description": "<input>", "isCorrect": false },
+        { "id": "opt3", "description": "<button>", "isCorrect": false },
+        { "id": "opt4", "description": "<fieldset>", "isCorrect": true }
+      ],
+      "answers": ["opt1", "opt4"],
+      "explanation": "<form> is used to define the form, while <fieldset> groups form elements.",
+      "difficulty": "medium",
+      "tags": ["HTML", "forms", "tags"]
+    }
+  ]
+}

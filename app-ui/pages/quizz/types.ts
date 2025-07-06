@@ -13,3 +13,9 @@ export type QuestionData = {
   difficulty?: "easy" | "medium" | "hard";
   tags?: string[];
 };
+
+export type QuizzData = {
+  id: string[];
+  subject: string;
+  questions: QuestionData[];
+};
